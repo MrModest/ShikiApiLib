@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<docs>
+  <ShikiApi>
+    <class name="ShikiApi">
+      <summary>
+        Класс авторизованного пользователя. Инициализированный экземпляр класса означает авторизованного пользователя
+      </summary>
+    </class>
+    
+    <property name="Nickname">
+      <summary>
+        Логин пользователя на сайте
+      </summary>
+    </property>
+    <property name="AccessToken">
+      <summary>
+        Токен для работы с API
+      </summary>
+    </property>
+    <property name="CurrentUserId">
+      <summary>
+        ID пользователя
+      </summary>
+    </property>
+    <property name="Info">
+      <summary>
+        Хранит последний результат метода <see cref="GetUserInfo" />
+      </summary>
+    </property>
+    <property name="AnimeRates">
+      <summary>
+        Хранит последний результат метода <see cref="GetAnimeRates" />
+      </summary>
+    </property>
+    <property name="MangaRates">
+      <summary>
+        Хранит последний результат метода <see cref="GetMangaRates" />
+      </summary>
+    </property>
+
+    <constructor name="ShikiApi1">
+      <summary>
+        Инициализирует нового пользователя, запрашивая токен и ID пользователя с сайта.
+      </summary>
+      <param name="nickname"> Логин пользователя на сайте </param>
+      <param name="password"> Пароль пользователя на сайте </param>
+    </constructor>
+    <constructor name="ShikiApi2">
+      <summary>
+        Инициализирует нового пользователя, явно задавая значения токена и ID пользователя.
+      </summary>
+      <param name="nickname">
+        Логин пользователя на сайте
+      </param>
+      <param name="access_token">Токен для работы с API</param>
+      <param name="current_user_id">ID пользователя</param>
+    </constructor>
+
+    <method name="GetUserInfo">
+      <summary>
+        Получает инфо о пользователе
+      </summary>
+    </method>
+    <method name="GetAnimeRates">
+      <summary>
+        Получает список аниме с оценками и прогрессом пользователя
+      </summary>
+      <param name="limit">Количество возвращаемых аниме (по умолчанию: все)</param>
+    </method>
+    <method name="GetMangaRates">
+      <summary>
+        Получает список манги с оценками и прогрессом пользователя
+      </summary>
+      <param name="limit">Количество возвращаемой манги (по умолчанию: все)</param>
+    </method>
+    <method name="UpdateAnimeRate">
+      <summary>
+        Редактирует аниме в списке пользователя
+      </summary>
+      <param name="title">Аниме требуещее правки</param>
+      <param name="status">Статус просмотра</param>
+      <param name="score">Оценка</param>
+      <param name="episodes">Количество просмотренных эпизодов</param>
+    </method>
+    <method name="UpdateMangaRate">
+      <summary>
+        Редактирует мангу в списке пользователя
+      </summary>
+      <param name="title">Манга требующая правки</param>
+      <param name="status">Статус прочтения</param>
+      <param name="score">Оценка</param>
+      <param name="volumes">Количество прочитанных глав</param>
+      <param name="chapters">Количество прочитанных топов</param>
+    </method>
+    <method name="CreateAnimeRate">
+      <summary>
+        Добавляет новое аниме в список пользователя
+      </summary>
+      <param name="title_id">ID аниме</param>
+      <param name="status">Статус просмотра</param>
+      <param name="score">Оценка</param>
+      <param name="episodes">Количество просмотренных эпизодов</param>
+    </method>
+    <method name="CreateMangaRate">
+      <summary>
+        Добавляет новую мангу в список пользователя
+      </summary>
+      <param name="title_id">ID манги</param>
+      <param name="status">Статус прочтения</param>
+      <param name="score">Оценка</param>
+      <param name="volumes">Количество прочитанных глав</param>
+      <param name="chapters">Количество прочитанных топов</param>
+    </method>
+    <method name="DeleteRate">
+      <summary>
+        Удаляет выбранный тайтл (аниме или мангу) из списка пользователя
+      </summary>
+      <param name="user_rate_id">ID тайтла в списке пользователя (не путать с ID самого тайтла)</param>
+    </method>
+    <method name="GetAnimeRate">
+      <summary>
+        Получает аниме из списка пользователя
+      </summary>
+      <param name="user_rate_id">ID тайтла в списке пользователя (не путать с ID самого тайтла)</param>
+    </method>
+    <method name="GetMangaRate">
+      <summary>
+        Получает мангу из списка пользователя
+      </summary>
+      <param name="user_rate_id">ID тайтла в списке пользователя (не путать с ID самого тайтла)</param>
+    </method>
+    <method name="GetAnimeFullInfo">
+      <summary>
+        Получает подробную информацию об аниме
+      </summary>
+      <param name="title_id">ID аниме</param>
+    </method>
+    <method name="GetMangaFullInfo">
+      <summary>
+        Получает подробную информацию об манге
+      </summary>
+      <param name="title_id">ID манги</param>
+    </method>
+  </ShikiApi>
+
+  <Enums>
+    <enum name="TitleType">
+      <summary>
+        
+      </summary>
+    </enum>
+    <enum name="UserStatus">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="Order">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="Rating">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="TitleStatus">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="AKind">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="MKind">
+      <summary>
+
+      </summary>
+    </enum>
+    <enum name="Duration">
+      <summary>
+
+      </summary>
+    </enum>
+  </Enums>
+</docs>
