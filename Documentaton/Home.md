@@ -9,7 +9,7 @@
 		<th>Описание</th>
 	</tr>
 	<tr>
-		<td>![public](/media/pubclass.gif?raw=true "public")</td>
+		<td>![public](https://raw.github.com/MrModest/ShikiApiLib/master/Documentaton/media/pubclass.gif)</td>
 		<td>
 			<a target="_blank" href="T_ShikiApiLib_ShikiApi.md">ShikiApi</a>
 		</td>
