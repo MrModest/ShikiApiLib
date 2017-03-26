@@ -51,7 +51,13 @@ namespace ShikiApiLib
         /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.status"]/*' />
         status,
         /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.type"]/*' />
-        type
+        type,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.episodes"]/*' />
+        episodes,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.volumes"]/*' />
+        volumes,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.chapters"]/*' />
+        chapters
     }
 
     /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating"]/*' />

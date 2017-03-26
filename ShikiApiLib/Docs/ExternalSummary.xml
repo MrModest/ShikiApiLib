@@ -220,6 +220,15 @@
     <enum name="Order.type">
       <summary>По типу тайтла (TV, Фильм и т.п.)</summary>
     </enum>
+    <enum name="Order.episodes">
+      <summary>По количеству эпизодов</summary>
+    </enum>
+    <enum name="Order.volumes">
+      <summary>По количеству томов</summary>
+    </enum>
+    <enum name="Order.chapters">
+      <summary>По количеству глав</summary>
+    </enum>
     
     <enum name="Rating">
       <summary>Возрастной рейтинг</summary>
