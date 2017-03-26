@@ -1,7 +1,7 @@
 # ShikiApiLib - пространство имён
 
 ## Классы
-
+![public](media/pubclass.gif)
 <table>
 	<tr>
 		<th/>
@@ -9,7 +9,7 @@
 		<th>Описание</th>
 	</tr>
 	<tr>
-		<td>![public](media/pubclass.gif)</td>
+		<td> ![public](media/pubclass.gif) </td>
 		<td>
 			<a target="_blank" href="T_ShikiApiLib_ShikiApi.md">ShikiApi</a>
 		</td>
