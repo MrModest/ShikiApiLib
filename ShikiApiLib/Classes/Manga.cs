@@ -29,7 +29,7 @@ namespace ShikiApiLib
             UserRateId    = rate.id;
             UserStatus    = rate.status;
             Score         = rate.score;
-            TitleId       = rate.anime.TitleId;
+            TitleId       = rate.manga.TitleId;
             Name          = rate.manga.Name;
             RusName       = rate.manga.RusName;
             Poster        = rate.manga.Poster;
