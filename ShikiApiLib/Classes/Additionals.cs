@@ -9,39 +9,133 @@ namespace ShikiApiLib
     //Вспомогательные классы перечисления
 
     /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleType"]/*' />
-    public enum TitleType { anime, manga }
+    public enum TitleType
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleType.anime"]/*' />
+        anime,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleType.manga"]/*' />
+        manga
+    }
     /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus"]/*' />
-    public enum UserStatus { planned, watching, completed, on_hold, dropped, rewatching = 9 }
-    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order"]/*' />
-    public enum Order { ranked, popularity, name, aired_on, id }
-    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating"]/*' />
-    public enum Rating { g, pg, pg_13, r, r_plus, rx }
-    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus"]/*' />
-    public enum TitleStatus { released, latest, ongoing, anons }
-    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind"]/*' />
-    public enum AKind { tv, tv_13, tv_24, tv_48, movie, ova, ona, special }
-    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind"]/*' />
-    public enum MKind { manga, manhwa, manhua, novel, one_shot, doujin }
+    public enum UserStatus
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.planned"]/*' />
+        planned,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.watching"]/*' />
+        watching,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.completed"]/*' />
+        completed,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.on_hold"]/*' />
+        on_hold,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.dropped"]/*' />
+        dropped,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="UserStatus.rewatching"]/*' />
+        rewatching = 9
+    }
 
-    /// <summary>
-    /// Продолжительность эпизода
-    /// </summary>
+    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order"]/*' />
+    public enum Order
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.ranked"]/*' />
+        ranked,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.popularity"]/*' />
+        popularity,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.name"]/*' />
+        name,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.aired_on"]/*' />
+        aired_on,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.id"]/*' />
+        id,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.random"]/*' />
+        random,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.status"]/*' />
+        status,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Order.type"]/*' />
+        type
+    }
+
+    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating"]/*' />
+    public enum Rating
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.g"]/*' />
+        g,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.pg"]/*' />
+        pg,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.pg_13"]/*' />
+        pg_13,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.r"]/*' />
+        r,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.r_plus"]/*' />
+        r_plus,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Rating.rx"]/*' />
+        rx
+    }
+
+    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus"]/*' />
+    public enum TitleStatus
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus.released"]/*' />
+        released,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus.latest"]/*' />
+        latest,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus.ongoing"]/*' />
+        ongoing,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="TitleStatus.anons"]/*' />
+        anons
+    }
+
+    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind"]/*' />
+    public enum AKind
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.tv"]/*' />
+        tv,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.tv_13"]/*' />
+        tv_13,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.tv_24"]/*' />
+        tv_24,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.tv_48"]/*' />
+        tv_48,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.movie"]/*' />
+        movie,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.ova"]/*' />
+        ova,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.ona"]/*' />
+        ona,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.special"]/*' />
+        special,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="AKind.music"]/*' />
+        music
+    }
+
+    /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind"]/*' />
+    public enum MKind
+    {
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.manga"]/*' />
+        manga,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.manhwa"]/*' />
+        manhwa,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.manhua"]/*' />
+        manhua,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.novel"]/*' />
+        novel,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.one_shot"]/*' />
+        one_shot,
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="MKind.doujin"]/*' />
+        doujin
+    }
+
     /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Duration"]/*' />
     public enum Duration
     {
-        /// <summary>
-        /// Эпизод до 10 минут
-        /// </summary>
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Duration.S"]/*' />
         S,
-        /// <summary>
-        /// Эпизод до 30 минут
-        /// </summary>
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Duration.D"]/*' />
         D,
-        /// <summary>
-        /// Эпизод более 30 минут
-        /// </summary>
+        /// <include file='Docs/ExternalSummary.xml' path='docs/Enums/enum[@name="Duration.F"]/*' />
         F
     }
+
+
 
     public static class UserRateStatus
     {

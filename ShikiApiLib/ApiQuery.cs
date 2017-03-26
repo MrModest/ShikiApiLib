@@ -9,9 +9,9 @@ using System.Net;
 
 namespace ShikiApiLib
 {
-    public static class Query
+    internal static class Query
     {
-        public static T GET<T>(string url, ShikiApi user = null)
+        internal static T GET<T>(string url, ShikiApi user = null)
         {
             using (var httpClient = new HttpClient())
             {
@@ -30,7 +30,7 @@ namespace ShikiApiLib
             }
         }
 
-        public static T POST<T>(string url, FormUrlEncodedContent args, ShikiApi user = null)
+        internal static T POST<T>(string url, FormUrlEncodedContent args, ShikiApi user = null)
         {
             using (var httpClient = new HttpClient())
             {
@@ -47,7 +47,7 @@ namespace ShikiApiLib
             }
         }
 
-        public static T PUT<T>(string url, FormUrlEncodedContent args, ShikiApi user = null)
+        internal static T PUT<T>(string url, FormUrlEncodedContent args, ShikiApi user = null)
         {
             using (var httpClient = new HttpClient())
             {
@@ -64,7 +64,7 @@ namespace ShikiApiLib
             }
         }
 
-        public static HttpStatusCode DELETE(string url, ShikiApi user = null)
+        internal static HttpStatusCode DELETE(string url, ShikiApi user = null)
         {
             using (var httpClient = new HttpClient())
             {

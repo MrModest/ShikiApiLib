@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace ShikiApiLib
 {
-    public class JsonGenericDictionaryOrArrayConverterNameValueMod : JsonConverter
+    internal class JsonGenericDictionaryOrArrayConverterNameValueMod : JsonConverter
     {
         // поскольку у нас в JSON'е не key/value, а name/value, нужен специальный класс
         // для десериализации одного элемента массива
