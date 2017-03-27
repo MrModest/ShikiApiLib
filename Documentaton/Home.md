@@ -1,7 +1,7 @@
 # ShikiApiLib - пространство имён
 
 ## Классы
-![public](media/pubclass.gif)
+
 <table>
 	<tr>
 		<th/>
