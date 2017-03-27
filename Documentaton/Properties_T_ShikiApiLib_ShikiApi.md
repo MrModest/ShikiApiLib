@@ -12,14 +12,14 @@
 		<th>Описание</th>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_AccessToken.md">AccessToken</a>
 		</td>
 		<td>Токен для работы с API</td>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_AnimeRates.md">AnimeRates</a>
 		</td>
@@ -27,14 +27,14 @@
 		</td>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_CurrentUserId.md">CurrentUserId</a>
 		</td>
 		<td>ID пользователя</td>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_Info.md">Info</a>
 		</td>
@@ -42,7 +42,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_MangaRates.md">MangaRates</a>
 		</td>
@@ -50,7 +50,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>![public](media/pubproperty.gif)</td>
+		<td><img src="media/pubproperty.gif" /></td>
 		<td>
 			<a target="_blank" href="P_ShikiApiLib_ShikiApi_Nickname.md">Nickname</a>
 		</td>
