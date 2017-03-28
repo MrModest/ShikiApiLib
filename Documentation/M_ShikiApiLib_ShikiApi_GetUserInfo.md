@@ -14,7 +14,7 @@ public UserInfo GetUserInfo()
 
 
 #### Возвращаемое значение
-Тип:&nbsp;UserInfo
+Тип:&nbsp;<a href="T_ShikiApiLib_UserInfo.md">UserInfo</a>
 
 ## См. также
 
