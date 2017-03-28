@@ -14,7 +14,7 @@
 
 ## ShikiApi
 
-Авторизация нового пользователя происходит посредством инициализации экземпляра класса <a target="_blank" href="Documentaton/T_ShikiApiLib_ShikiApi.md">ShikiApi</a>.
+Авторизация нового пользователя происходит посредством инициализации экземпляра класса <a target="_blank" href="Documentaton/T_ShikiApiLib_ShikiApi.md"><strong>ShikiApi</strong></a>.
 
 ```C#
 ShikiApi user = new ShikiApi("nickname", "password");
