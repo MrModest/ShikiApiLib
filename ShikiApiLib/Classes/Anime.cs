@@ -9,7 +9,9 @@ namespace ShikiApiLib
 {
     public class AnimeShortInfo : TitleShortInfo
     {
+        [JsonProperty(PropertyName = "episodes")]
         public int TotalEpisodes { get; set; } //Total count (For ongoin = 0)
+        [JsonProperty(PropertyName = "episodes_aired")]
         public int AiredEpisodes { get; set; } //For ongoing
     }
 

@@ -9,7 +9,9 @@ namespace ShikiApiLib
 {
     public class MangaShortInfo : TitleShortInfo
     {
+        [JsonProperty(PropertyName = "volumes")]
         public int TotalVolumes { get; set; }
+        [JsonProperty(PropertyName = "chapters")]
         public int TotalChapters { get; set; }
     }
 
