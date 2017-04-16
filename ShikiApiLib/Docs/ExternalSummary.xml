@@ -126,6 +126,14 @@
       <param name="user_id">ID пользователя</param>
       <param name="limit">Количество возвращаемой манги (по умолчанию: все)</param>
     </method>
+    <method name="GetTitleType1">
+      <summary>Возвращает тип тайтла из списка пользователя (аниме или манга)</summary>
+      <param name="rate">Тайтл из списка пользователя</param>
+    </method>
+    <method name="GetTitleType2">
+      <summary>Возвращает тип тайтла из списка пользователя (аниме или манга)</summary>
+      <param name="rate">Тайтл из списка пользователя</param>
+    </method>
     <method name="GetAnimeFullInfo">
       <summary>Получает подробную информацию об аниме</summary>
       <param name="title_id">ID аниме</param>

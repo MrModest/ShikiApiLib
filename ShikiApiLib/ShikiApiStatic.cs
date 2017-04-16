@@ -39,6 +39,22 @@ namespace ShikiApiLib
             return Query.GET<List<_UserRate>>(url).Select(x => new MangaRate(x)).ToList();
         }
 
+        /// <include file='Docs/ExternalSummary.xml' path='docs/ShikiApiStatic/method[@name="GetTitleType1"]/*' />
+        public static TitleType GetTitleType(_UserRate rate)
+        {
+            if (rate.anime != null) { return TitleType.anime; }
+            if (rate.manga != null) { return TitleType.manga; }
+            return (TitleType)(-1);
+        }
+
+        /// <include file='Docs/ExternalSummary.xml' path='docs/ShikiApiStatic/method[@name="GetTitleType2"]/*' />
+        public static TitleType GetTitleType(_UserRate_v2 rate)
+        {
+            if (rate.target_type == "Anime") { return TitleType.anime; }
+            if (rate.target_type == "Manga") { return TitleType.manga; }
+            return (TitleType)(-1);
+        }
+
         /// <include file='Docs/ExternalSummary.xml' path='docs/ShikiApiStatic/method[@name="GetAnimeFullInfo"]/*' />
         public static AnimeFullInfo GetAnimeFullInfo(int title_id)
         {
