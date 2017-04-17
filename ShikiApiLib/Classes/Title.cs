@@ -103,9 +103,6 @@ namespace ShikiApiLib
 
     public abstract class TitleFullInfo : TitleShortInfo
     {
-        [JsonProperty(PropertyName = "rating")]
-        public string Rating { get; set; } // age rate - "rg-13" and etc.
-
         [JsonProperty(PropertyName = "english")]
         public List<string> EnNames { get; set; } //other name
 

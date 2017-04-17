@@ -104,6 +104,9 @@ namespace ShikiApiLib
 
     public class AnimeFullInfo : TitleFullInfo
     {
+        [JsonProperty(PropertyName = "rating")]
+        public string Rating { get; set; } // age rate - "rg-13" and etc.
+
         [JsonProperty(PropertyName = "episodes")]
         public int TotalEpisodes { get; set; } //total episodes
 
