@@ -83,14 +83,14 @@ namespace ShikiApiLib
         }
 
         /// <include file='Docs/ExternalSummary.xml' path='docs/ShikiApiStatic/method[@name="GetPublishers"]/*' />
-        public static List<Studio> GetPublishers()
+        public static List<Publisher> GetPublishers()
         {
             string url = DomenApi + "publishers";
-            return Query.GET<List<Studio>>(url);
+            return Query.GET<List<Publisher>>(url);
         }
 
         /// <include file='Docs/ExternalSummary.xml' path='docs/ShikiApiStatic/method[@name="GetPublisher"]/*' />
-        public static Studio GetPublisher(int id)
+        public static Publisher GetPublisher(int id)
         {
             return GetPublishers().FirstOrDefault(x => x.id == id);
         }
