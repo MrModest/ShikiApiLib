@@ -112,7 +112,7 @@ namespace ShikiApiLib
         public string name { get; set; }
         public string filtered_name { get; set; }
         public bool real { get; set; }
-        public string image { get { return ShikiApiStatic.Domen + _image; } set { _image = value.Split('?')[0]; } }
+        public string image { get { return ShikiApiStatic.Domen + _image; } set { _image = (value != null) ? value.Split('?')[0] : null ; } }
     }
 
     public class Video
