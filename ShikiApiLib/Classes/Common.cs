@@ -106,11 +106,13 @@ namespace ShikiApiLib
 
     public class Studio
     {
+        private string _image;
+
         public int id { get; set; }
         public string name { get; set; }
         public string filtered_name { get; set; }
         public bool real { get; set; }
-        public string image { get; set; }
+        public string image { get { return ShikiApiStatic.Domen + _image; } set { _image = value.Split('?')[0]; } }
     }
 
     public class Video
