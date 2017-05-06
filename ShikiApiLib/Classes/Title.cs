@@ -174,7 +174,7 @@ namespace ShikiApiLib
         public bool Censored { get; set; }
         public int Page { get; set; }
         public IDictionary<UserStatus, bool> MyList { get; set; }
-        public IDictionary<Order, bool> Order { get; set; }
+        public Order Order { get; set; }
         public IDictionary<Rating, bool> Rating { get; set; }
         public IDictionary<TitleStatus, bool> TitleStatus { get; set; }
         public IDictionary<string, bool> Season { get; set; }
@@ -188,7 +188,7 @@ namespace ShikiApiLib
             Censored = false;
             Page = 1;
             MyList = new Dictionary<UserStatus, bool>();
-            Order = new Dictionary<Order, bool>();
+            Order = Order.ranked;
             Rating = new Dictionary<Rating, bool>();
             TitleStatus = new Dictionary<TitleStatus, bool>();
             Season = new Dictionary<string, bool>();

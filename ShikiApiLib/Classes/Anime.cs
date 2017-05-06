@@ -144,8 +144,9 @@ namespace ShikiApiLib
 
         public List<AnimeShortInfo> GetSearch(ShikiApi user = null)
         {
-            var url = "https://shikimori.org/api/" + "animes?";
+            var url = ShikiApiStatic.DomenApi + "animes?";
 
+            url += "order=" + Order + "&";
             if (SearchText != "") { url += "search=" + SearchText + "&"; }
             if (Limit > 1) { url += "limit=" + Limit + "&"; } // тут всё верно. в запросе по умолчанию limit=1, я же хочу, чтобы (если не указано) выдавало страницу полностью (обычно до 50 строк)
             if (Censored) { url += "censored=" + "true" + "&"; }
@@ -153,7 +154,6 @@ namespace ShikiApiLib
             if (MyList.Count > 0) { url += "mylist=" + DictToStr(MyList) + "&"; }
             if (Kind.Count > 0) { url += "type=" + DictToStr(Kind) + "&"; }
             if (Duration.Count > 0) { url += "duration=" + DictToStr(Duration) + "&"; }
-            if (Order.Count > 0) { url += "order=" + DictToStr(Order) + "&"; }
             if (Rating.Count > 0) { url += "rating=" + DictToStr(Rating) + "&"; }
             if (TitleStatus.Count > 0) { url += "status=" + DictToStr(TitleStatus) + "&"; }
             if (Season.Count > 0) { url += "season=" + DictToStr(Season) + "&"; }
@@ -168,8 +168,9 @@ namespace ShikiApiLib
 
         private string GetSearchString() //для отладки (!) для использования сменить модификатор с private на public и пересобрать решение.
         {
-            var url = "https://shikimori.org/api/" + "animes?";
+            var url = ShikiApiStatic.DomenApi + "animes?";
 
+            url += "order=" + Order + "&";
             if (SearchText != "") { url += "search=" + SearchText + "&"; }
             if (Limit > 1) { url += "limit=" + Limit + "&"; } // тут всё верно. в запросе по умолчанию limit=1, я же хочу, чтобы (если не указано) выдавало страницу полностью (обычно до 50 строк)
             if (Censored) { url += "censored=" + "true" + "&"; }
@@ -177,7 +178,6 @@ namespace ShikiApiLib
             if (MyList.Count > 0) { url += "mylist=" + DictToStr(MyList) + "&"; }
             if (Kind.Count > 0) { url += "type=" + DictToStr(Kind) + "&"; }
             if (Duration.Count > 0) { url += "duration=" + DictToStr(Duration) + "&"; }
-            if (Order.Count > 0) { url += "order=" + DictToStr(Order) + "&"; }
             if (Rating.Count > 0) { url += "rating=" + DictToStr(Rating) + "&"; }
             if (Season.Count > 0) { url += "season=" + DictToStr(Season) + "&"; }
             if (Genre.Count > 0) { url += "genre=" + DictToStr(Genre) + "&"; }
