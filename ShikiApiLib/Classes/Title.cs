@@ -173,13 +173,13 @@ namespace ShikiApiLib
         public int Limit { get; set; }
         public bool Censored { get; set; }
         public int Page { get; set; }
+        public int TitleScore { get; set; }
         public IDictionary<UserStatus, bool> MyList { get; set; }
         public Order Order { get; set; }
         public IDictionary<Rating, bool> Rating { get; set; }
         public IDictionary<TitleStatus, bool> TitleStatus { get; set; }
         public IDictionary<string, bool> Season { get; set; }
         public IDictionary<int, bool> Genre { get; set; }
-        public IDictionary<int, bool> TitleScore { get; set; }
 
         public TitleSearch()
         {
@@ -187,13 +187,13 @@ namespace ShikiApiLib
             Limit = 999999;
             Censored = false;
             Page = 1;
+            TitleScore = 0;
             MyList = new Dictionary<UserStatus, bool>();
             Order = Order.ranked;
             Rating = new Dictionary<Rating, bool>();
             TitleStatus = new Dictionary<TitleStatus, bool>();
             Season = new Dictionary<string, bool>();
             Genre = new Dictionary<int, bool>();
-            TitleScore = new Dictionary<int, bool>();
         }
 
         protected static string DictToStr<T>(IDictionary<T, bool> filter)

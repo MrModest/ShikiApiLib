@@ -151,6 +151,7 @@ namespace ShikiApiLib
             if (Limit > 1) { url += "limit=" + Limit + "&"; } // тут всё верно. в запросе по умолчанию limit=1, я же хочу, чтобы (если не указано) выдавало страницу полностью (обычно до 50 строк)
             if (Censored) { url += "censored=" + "true" + "&"; }
             if (Page > 1) { url += "page=" + Page + "&"; }
+            if (TitleScore > 0) { url += "score=" + TitleScore + "&"; }
             if (MyList.Count > 0) { url += "mylist=" + DictToStr(MyList) + "&"; }
             if (Kind.Count > 0) { url += "type=" + DictToStr(Kind) + "&"; }
             if (Duration.Count > 0) { url += "duration=" + DictToStr(Duration) + "&"; }
@@ -159,7 +160,6 @@ namespace ShikiApiLib
             if (Season.Count > 0) { url += "season=" + DictToStr(Season) + "&"; }
             if (Genre.Count > 0) { url += "genre=" + DictToStr(Genre) + "&"; }
             if (Studio.Count > 0) { url += "studio=" + DictToStr(Studio) + "&"; }
-            if (TitleScore.Count > 0) { url += "score=" + DictToStr(TitleScore) + "&"; }
 
             return Query.GET<List<AnimeShortInfo>>(url, user);
         }
@@ -175,6 +175,7 @@ namespace ShikiApiLib
             if (Limit > 1) { url += "limit=" + Limit + "&"; } // тут всё верно. в запросе по умолчанию limit=1, я же хочу, чтобы (если не указано) выдавало страницу полностью (обычно до 50 строк)
             if (Censored) { url += "censored=" + "true" + "&"; }
             if (Page > 1) { url += "page=" + Page + "&"; }
+            if (TitleScore > 0) { url += "score=" + TitleScore + "&"; }
             if (MyList.Count > 0) { url += "mylist=" + DictToStr(MyList) + "&"; }
             if (Kind.Count > 0) { url += "type=" + DictToStr(Kind) + "&"; }
             if (Duration.Count > 0) { url += "duration=" + DictToStr(Duration) + "&"; }
@@ -182,7 +183,6 @@ namespace ShikiApiLib
             if (Season.Count > 0) { url += "season=" + DictToStr(Season) + "&"; }
             if (Genre.Count > 0) { url += "genre=" + DictToStr(Genre) + "&"; }
             if (Studio.Count > 0) { url += "studio=" + DictToStr(Studio) + "&"; }
-            if (TitleScore.Count > 0) { url += "score=" + DictToStr(TitleScore) + "&"; }
 
             return url.Remove(url.Length - 1);
         }
