@@ -113,7 +113,7 @@ namespace ShikiApiLib
         public List<string> Synonyms { get; set; } //other name
 
         [JsonProperty(PropertyName = "score")]
-        public string TitleScore { get; set; }
+        public double TitleScore { get; set; }
 
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
